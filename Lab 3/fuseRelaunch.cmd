@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/MMA/lab3-mam/clock_timer_top_isim_beh.exe" -prj "E:/MMA/lab3-mam/clock_timer_top_beh.prj" "work.clock_timer_top" "work.glbl" 

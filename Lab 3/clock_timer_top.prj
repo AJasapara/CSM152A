@@ -1,0 +1,4 @@
+verilog work "counter.v"
+verilog work "clock_counter.v"
+verilog work "clock.v"
+verilog work "clock_timer_top.v"

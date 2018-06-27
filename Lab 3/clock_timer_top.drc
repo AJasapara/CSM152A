@@ -1,0 +1,8 @@
+Release 14.6 Drc P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue May 22 13:12:35 2018
+
+drc -z clock_timer_top.ncd clock_timer_top.pcf
+
+DRC detected 0 errors and 0 warnings.

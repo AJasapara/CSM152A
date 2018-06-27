@@ -1,0 +1,130 @@
+//! **************************************************************************
+// Written by: Map P.68d on Tue May 22 13:12:05 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "btnR" LOCATE = SITE "D9" LEVEL 1;
+COMP "btnS" LOCATE = SITE "B8" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "M13" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "async_rst_reg_0" BEL "async_rst_reg_1" BEL "clk_en"
+        BEL "clk_div_0" BEL "clk_div_1" BEL "clk_div_2" BEL "clk_div_3" BEL
+        "clk_div_4" BEL "clk_div_5" BEL "clk_div_6" BEL "clk_div_7" BEL
+        "clk_div_8" BEL "clk_div_9" BEL "clk_div_10" BEL "clk_div_11" BEL
+        "clk_div_12" BEL "clk_div_13" BEL "clk_div_14" BEL "clk_div_15" BEL
+        "clk_div_16" BEL "step_d_0" BEL "step_d_1" BEL "step_d_2" BEL
+        "counter_module/minutesTensCounter_2" BEL
+        "counter_module/minutesTensCounter_1" BEL
+        "counter_module/minutesUnitCounter_3" BEL
+        "counter_module/minutesUnitCounter_2" BEL
+        "counter_module/minutesUnitCounter_1" BEL
+        "counter_module/secondsUnitCounter_3" BEL
+        "counter_module/secondsUnitCounter_2" BEL
+        "counter_module/secondsUnitCounter_1" BEL
+        "counter_module/secondsUnitCounter_0" BEL
+        "counter_module/secondsTensCounter_2" BEL
+        "counter_module/secondsTensCounter_1" BEL
+        "clock_counter_module/clockOne_26" BEL
+        "clock_counter_module/clockOne_25" BEL
+        "clock_counter_module/clockOne_24" BEL
+        "clock_counter_module/clockOne_23" BEL
+        "clock_counter_module/clockOne_22" BEL
+        "clock_counter_module/clockOne_21" BEL
+        "clock_counter_module/clockOne_20" BEL
+        "clock_counter_module/clockOne_19" BEL
+        "clock_counter_module/clockOne_18" BEL
+        "clock_counter_module/clockOne_17" BEL
+        "clock_counter_module/clockOne_16" BEL
+        "clock_counter_module/clockOne_15" BEL
+        "clock_counter_module/clockOne_14" BEL
+        "clock_counter_module/clockOne_13" BEL
+        "clock_counter_module/clockOne_12" BEL
+        "clock_counter_module/clockOne_11" BEL
+        "clock_counter_module/clockOne_10" BEL
+        "clock_counter_module/clockOne_9" BEL
+        "clock_counter_module/clockOne_8" BEL
+        "clock_counter_module/clockOne_7" BEL
+        "clock_counter_module/clockOne_6" BEL
+        "clock_counter_module/clockOne_5" BEL
+        "clock_counter_module/clockOne_4" BEL
+        "clock_counter_module/clockOne_3" BEL
+        "clock_counter_module/clockOne_2" BEL
+        "clock_counter_module/clockOne_1" BEL
+        "clock_counter_module/clockOne_0" BEL
+        "clock_counter_module/clockFour_23" BEL
+        "clock_counter_module/clockFour_22" BEL
+        "clock_counter_module/clockFour_21" BEL
+        "clock_counter_module/clockFour_20" BEL
+        "clock_counter_module/clockFour_19" BEL
+        "clock_counter_module/clockFour_18" BEL
+        "clock_counter_module/clockFour_17" BEL
+        "clock_counter_module/clockFour_16" BEL
+        "clock_counter_module/clockFour_15" BEL
+        "clock_counter_module/clockFour_14" BEL
+        "clock_counter_module/clockFour_13" BEL
+        "clock_counter_module/clockFour_12" BEL
+        "clock_counter_module/clockFour_11" BEL
+        "clock_counter_module/clockFour_10" BEL
+        "clock_counter_module/clockFour_9" BEL
+        "clock_counter_module/clockFour_8" BEL
+        "clock_counter_module/clockFour_7" BEL
+        "clock_counter_module/clockThree_17" BEL
+        "clock_counter_module/clockThree_16" BEL
+        "clock_counter_module/clockThree_15" BEL
+        "clock_counter_module/clockThree_14" BEL
+        "clock_counter_module/clockThree_13" BEL
+        "clock_counter_module/clockThree_12" BEL
+        "clock_counter_module/clockThree_11" BEL
+        "clock_counter_module/clockThree_10" BEL
+        "clock_counter_module/clockThree_9" BEL
+        "clock_counter_module/clockThree_8" BEL
+        "clock_counter_module/clockThree_7" BEL
+        "clock_counter_module/clockThree_6" BEL
+        "clock_counter_module/clockThree_5" BEL
+        "clock_counter_module/clockThree_4" BEL
+        "clock_counter_module/clockTwo_25" BEL
+        "clock_counter_module/clockTwo_24" BEL
+        "clock_counter_module/clockTwo_23" BEL
+        "clock_counter_module/clockTwo_22" BEL
+        "clock_counter_module/clockTwo_21" BEL
+        "clock_counter_module/clockTwo_20" BEL
+        "clock_counter_module/clockTwo_19" BEL
+        "clock_counter_module/clockTwo_18" BEL
+        "clock_counter_module/clockTwo_17" BEL
+        "clock_counter_module/clockTwo_16" BEL
+        "clock_counter_module/clockTwo_15" BEL
+        "clock_counter_module/clockTwo_14" BEL
+        "clock_counter_module/clockTwo_13" BEL
+        "clock_counter_module/clockTwo_12" BEL
+        "clock_counter_module/clockTwo_11" BEL
+        "clock_counter_module/clockTwo_10" BEL
+        "clock_counter_module/clockTwo_9" BEL
+        "clock_counter_module/clockTwo_8" BEL
+        "clock_counter_module/clockTwo_7" BEL "clock_counter_module/twoFreq"
+        BEL "clock_counter_module/oneFreq" BEL "pause_curr" BEL
+        "clock_counter_module/adjustFreq" BEL "clock_counter_module/fastFreq"
+        BEL "counter_module/minutesTensCounter_0" BEL
+        "counter_module/minutesUnitCounter_0" BEL
+        "counter_module/secondsTensCounter_0" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

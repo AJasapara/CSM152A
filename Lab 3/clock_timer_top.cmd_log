@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/MMA/lab3-mam/clock_timer_top.xst" -ofn "E:/MMA/lab3-mam/clock_timer_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock.ucf -p xc6slx16-csg324-3 clock_timer_top.ngc clock_timer_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o clock_timer_top_map.ncd clock_timer_top.ngd clock_timer_top.pcf 
+par -w -intstyle ise -ol high -mt off clock_timer_top_map.ncd clock_timer_top.ncd clock_timer_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml clock_timer_top.twx clock_timer_top.ncd -o clock_timer_top.twr clock_timer_top.pcf -ucf clock.ucf 
+bitgen -intstyle ise -f clock_timer_top.ut clock_timer_top.ncd 
